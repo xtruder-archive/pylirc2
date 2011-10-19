@@ -1,0 +1,20 @@
+Changelog
+
+Release 0.0.5 - 2005-01-06
+2005-01-06: Applied Sönke Schwardt's patch to fix a bug which occured
+              when pressing an unconfigured button (the last known 
+              configuration was returned instead of nothing)
+
+Release 0.0.4 - 2003-03-30
+2003-02-22: Implemented Brian J. Murrell's repeat count code.
+            Added extended mode to lirc_nextcode()
+            Added testscript for extended mode and for multiple threads
+            Updated docs
+
+Release 0.0.3
+2002-12-21: Implemented blocking/nonblocking functionality
+
+Release 0.0.2
+2002-12-17: Started on the docs
+2002-12-16: Initial sourceforge upload. Module currently is able of receiveing
+              non-blocked commands. Cleaned up code and added comments.

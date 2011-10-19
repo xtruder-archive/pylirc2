@@ -1,0 +1,13 @@
+Source: python2.3-pylirc
+Section: devel
+Priority: optional
+Maintainer: Linus McCabe <Linus@McCabe.nu> 
+Build-Depends: debhelper (>= 3.0.0), python2.3-dev (>= 2.3), liblircclient-dev
+Standards-Version: 3.5.2
+
+Package: python2.3-pylirc
+Architecture: any
+Depends: python2.3, ${shlibs:Depends}
+Description: LIRC Support for Python
+ A module for Python that interacts with lirc to give Python programs
+ the ability to receive commands from remote controls

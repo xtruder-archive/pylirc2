@@ -1,0 +1,87 @@
+
+pyLirc v0.0.5
+
+Introduction
+
+pyLirc is a module for Python that interacts with lirc to give 
+Python programs the ability to receive commands from remote 
+controls.
+
+This isn't much of documentation, but at least it's a start and
+there isn't much to document right now anyway.
+
+
+Initialization
+
+Before you can receive any commands from lirc, you'll need to 
+initialize the module. After importing pyLirc, call the pylirc.init()
+function:
+
+   import pylirc
+
+   integer = pylirc.init(string name[, string configuration [, integer blocking ]])
+
+the returnvalue is the returnvalue of lircs client library
+lirc_init(), ie a socket, or zero on failure.
+
+The socket can be used with select.select() to wait for data if you don't
+want to use blocking. This is especially useful in multithreaded programs
+as blocking mode of pylirc will blick all threads, whereas select() will
+only block the current and with optional timeout.
+
+name: the name used for your program in the lirc configuration
+file, must be supplied.
+
+configuration:  a filename to a lirc configuration file in case you wish not to
+use lircs default configuration file (usually ~/.lircrc).
+
+blocking: a flag indicating wether you want blocking mode or not. See also 
+blocking() and select.select() (latter in python docs)
+
+
+Polling
+
+If initialization was ok, you can poll lirc for commands. To read any commands
+in queue call pylirc.nextcode():
+
+   list = pylirc.nextcode([integer Exteneded])
+
+The returnvalue is 'None', if no commands was on the queue, or a list
+containing the commands read.
+
+To get the commands one by one enumerate the list:
+
+   for code in list:
+      print code
+
+If you supply the optional argument Extended as true, code will be a dictionary
+otherwise it will be a string (old behaviour).
+
+The dictionary currently contains:
+"config": The config string from lirc config file - the same string you'd get in
+          non-extended mode.
+"repeat": The repeat count of the buttonpress.
+      
+Note, that there can still be more commands on queue after a call
+to pylirc.nextcode(). You should call it in a loop until you get
+'None' back.
+
+
+Exiting
+
+When you're done using pyLirc and before you exit your program you
+should clean up:
+
+   pylirc.exit()
+
+
+Changing mode
+
+When you initialize pyLirc, you can chose wether you want blocking or
+non-blocking mode. Blocking mode means pylirc.nextcode() waits until
+there is a command to be read until it returns.
+To change mode after initialization, use blocking():
+
+   success = pylirc.blocking(int)
+   
+   

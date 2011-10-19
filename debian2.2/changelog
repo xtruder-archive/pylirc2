@@ -1,0 +1,22 @@
+python2.2-pylirc (0.0.5) unstable; urgency=low
+
+  * New upstream
+
+ -- Linus McCabe <linus@McCabe.nu>  Thu,  6 Jan 2005 19:22:33 +0100
+
+python2.2-pylirc (0.0.4-1) unstable; urgency=low
+
+  * New upstream
+
+ -- Aubin Paul <debian@outlyer.org>  Sun, 30 Mar 2003 12:15:21 -0500
+
+python2.2-pylirc (0.0.3-1) unstable; urgency=low
+
+  * New upstream 
+  * Initial Release
+
+ -- Aubin Paul <debian@outlyer.org>  Tue, 29 Jan 2003 00:22:29 -0500
+
+Local variables:
+mode: debian-changelog
+End:

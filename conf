@@ -1,0 +1,66 @@
+begin
+  remote = *
+  button = e
+  prog = pylirc
+  config = x
+end
+
+begin
+  remote = *
+  button = 1
+  prog = pylirc
+  config = testtest
+end
+
+begin
+  remote = *
+  button = 2
+  prog = pylirc
+  config = double
+  config = up
+end
+
+begin
+  remote = *
+  button = 3
+  prog = pylirc
+  config = quit
+end
+
+begin
+  remote = *
+  button = 4
+  prog = pylirc
+  config = blocking
+end
+
+begin
+  remote = *
+  button = 5
+  prog = pylirc
+  config = nonblocking
+end
+
+
+
+begin
+  remote = *
+  button = 1
+  prog = pytwo
+  config = one
+end
+
+begin
+  remote = *
+  button = 2
+  prog = pytwo
+  config = two
+end
+
+begin
+  remote = *
+  button = 3
+  prog = pytwo
+  config = quit
+end
+

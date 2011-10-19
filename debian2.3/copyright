@@ -1,0 +1,14 @@
+This package was debianized by Aubin Paul <debian@outlyer.org> on
+Tue, 29 Jan 2003 01:22:42 -0500.
+
+It was downloaded from http://pylirc.sf.net
+
+Upstream Author: Linus McCabe <pylirc.linus@mccabe.nu>
+
+Copyright:
+
+This software is covered by the GNU Library General Public Licence
+(version 2, or if you choose, a later version).
+
+On Debian GNU/Linux systems, the complete text of the GNU Library General
+Public License can be found in /usr/share/common-licenses/LGPL

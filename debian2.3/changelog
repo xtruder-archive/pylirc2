@@ -1,0 +1,10 @@
+python2.3-pylirc (0.0.5-1) unstable; urgency=low
+
+  * New upstream 
+  * Initial Release
+
+ -- Linus McCabe <Linus@McCabe.nu>  Thu, 06 Jan 2005 00:22:29 -0500
+
+Local variables:
+mode: debian-changelog
+End:
